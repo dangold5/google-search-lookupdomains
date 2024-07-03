@@ -2,11 +2,16 @@
 
 Simple script to lookup a list of domain names from search terms using the Google Search API. 
 
-## Setup Environment
+## Setup Python 
 ```
 python -m venv .venv
 source ./.venv/bin/activate
 pip install -r ./requirements.txt
+```
+## Set Environment variables
+```
+export GOOGLE_SEARCH_KEY_DLOOKUP=
+export GOOGLE_CSE_ID_DLOOKUP=
 ```
 
 ## Setup Search
@@ -14,13 +19,10 @@ Search terms are in file:
 `input/startupsearchterms.csv`
 
 ## Run Script
+```python
+python ./lookupDomains.py
+```
 
-Inputs:
-CSV file of Name, Search term
-Google search language to use
+## Output
+See output subfolder
 
-Requirements:
-Google Customer Search API Key
-Doppler secrets account
-
-pip install doppler-env
