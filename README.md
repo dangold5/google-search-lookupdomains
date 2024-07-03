@@ -1,6 +1,16 @@
 # Lookup Domain Names Python script
 
-Simple script to lookup a list of domain names from search terms using a search engine, like Google. You will need an API key before running this script. 
+Simple script to lookup a list of domain names from search terms using the Google Search API. 
+
+## Setup
+`
+python -m venv .venv
+source ./.venv/bin/activate
+pip install -r ./requirements.txt
+`
+
+Update file:
+`input/startupsearchterms.csv`
 
 Inputs:
 CSV file of Name, Search term
